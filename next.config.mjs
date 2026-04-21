@@ -1,9 +1,5 @@
 /** @type {import('next').NextConfig} */
 
-const isGithubPages = process.env.GITHUB_ACTIONS === 'true'
-
-const repoName = 'manuelcobos24.github.io'
-
 const nextConfig = {
   output: 'export',
 
@@ -15,8 +11,8 @@ const nextConfig = {
     unoptimized: true,
   },
 
-  basePath: isGithubPages ? `/${repoName}` : '',
-  assetPrefix: isGithubPages ? `/${repoName}/` : '',
+  basePath: '',
+  assetPrefix: '',
 }
 
 export default nextConfig
