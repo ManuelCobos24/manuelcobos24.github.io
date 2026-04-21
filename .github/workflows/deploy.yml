@@ -9,13 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
       
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@d882d12c5b08225312d30c8cb6f67eac86db23839
         with:
           version: 8
       
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@60edb5dd545a775178fba7b3278b57d530ee5aba
         with:
           node-version: '18'
           cache: 'pnpm'
@@ -25,7 +25,7 @@ jobs:
       - run: pnpm run build
       
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@373f7f263a89ce9c002c9e92915f3fa6b65b5f52
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out  # o ./build dependiendo de tu config
+          publish_dir: ./out
