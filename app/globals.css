@@ -1,0 +1,215 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* LIGHT MODE - Premium Blue Color System */
+  /* Backgrounds */
+  --background: rgb(255, 255, 255);               /* #FFFFFF */
+  --secondary-bg: rgb(247, 248, 250);             /* #F7F8FA */
+  --tertiary-bg: rgb(238, 240, 244);              /* #EEF0F4 */
+  
+  /* Text Colors */
+  --foreground: rgb(13, 17, 23);                  /* #0D1117 - primary text */
+  --secondary-text: rgb(60, 68, 85);              /* #3C4455 - body text */
+  --muted-foreground: rgb(107, 115, 133);         /* #6B7385 - labels */
+  
+  /* Accents & Interactive */
+  --accent: rgb(37, 99, 235);                     /* #2563EB - premium blue CTA */
+  --accent-hover: rgb(29, 78, 216);               /* #1D4ED8 - blue hover */
+  --accent-foreground: rgb(255, 255, 255);        /* white text on blue */
+  
+  /* Semantic Colors */
+  --primary: rgb(13, 17, 23);
+  --primary-foreground: rgb(255, 255, 255);
+  --card: rgb(247, 248, 250);
+  --card-foreground: rgb(13, 17, 23);
+  --popover: rgb(255, 255, 255);
+  --popover-foreground: rgb(13, 17, 23);
+  --secondary: rgb(238, 240, 244);
+  --secondary-foreground: rgb(60, 68, 85);
+  --muted: rgb(238, 240, 244);
+  
+  /* Borders & Input */
+  --border: rgb(226, 229, 237);                   /* #E2E5ED */
+  --input: rgb(247, 248, 250);
+  --ring: rgb(37, 99, 235);
+  
+  /* Charts & Legacy */
+  --destructive: rgb(220, 0, 49);
+  --destructive-foreground: rgb(255, 255, 255);
+  --chart-1: rgb(37, 99, 235);
+  --chart-2: rgb(220, 0, 49);
+  --chart-3: rgb(0, 122, 204);
+  --chart-4: rgb(13, 17, 23);
+  --chart-5: rgb(107, 115, 133);
+  
+  /* Sidebar Legacy */
+  --radius: 0;
+  --sidebar: rgb(255, 255, 255);
+  --sidebar-foreground: rgb(13, 17, 23);
+  --sidebar-primary: rgb(13, 17, 23);
+  --sidebar-primary-foreground: rgb(255, 255, 255);
+  --sidebar-accent: rgb(37, 99, 235);
+  --sidebar-accent-foreground: rgb(13, 17, 23);
+  --sidebar-border: rgb(226, 229, 237);
+  --sidebar-ring: rgb(37, 99, 235);
+}
+
+.dark {
+  /* DARK MODE - Premium Blue Color System */
+  /* Backgrounds */
+  --background: rgb(8, 12, 18);                   /* #080C12 */
+  --secondary-bg: rgb(15, 21, 32);                /* #0F1520 */
+  --tertiary-bg: rgb(22, 29, 46);                 /* #161D2E */
+  
+  /* Text Colors */
+  --foreground: rgb(240, 242, 247);               /* #F0F2F7 - primary text */
+  --secondary-text: rgb(176, 184, 204);           /* #B0B8CC - body text */
+  --muted-foreground: rgb(107, 122, 153);         /* #6B7A99 - labels */
+  
+  /* Accents & Interactive */
+  --accent: rgb(59, 130, 246);                    /* #3B82F6 - blue CTA */
+  --accent-hover: rgb(96, 165, 250);              /* #60A5FA - blue hover */
+  --accent-foreground: rgb(8, 12, 18);            /* dark text on blue */
+  
+  /* Semantic Colors */
+  --primary: rgb(240, 242, 247);
+  --primary-foreground: rgb(8, 12, 18);
+  --card: rgb(15, 21, 32);
+  --card-foreground: rgb(240, 242, 247);
+  --popover: rgb(22, 29, 46);
+  --popover-foreground: rgb(240, 242, 247);
+  --secondary: rgb(22, 29, 46);
+  --secondary-foreground: rgb(176, 184, 204);
+  --muted: rgb(22, 29, 46);
+  
+  /* Borders & Input */
+  --border: rgb(30, 42, 64);                      /* #1E2A40 */
+  --input: rgb(22, 29, 46);
+  --ring: rgb(59, 130, 246);
+  
+  /* Charts & Legacy */
+  --destructive: rgb(220, 0, 49);
+  --destructive-foreground: rgb(240, 242, 247);
+  --chart-1: rgb(59, 130, 246);
+  --chart-2: rgb(220, 0, 49);
+  --chart-3: rgb(0, 180, 255);
+  --chart-4: rgb(240, 242, 247);
+  --chart-5: rgb(176, 184, 204);
+  
+  /* Sidebar Legacy */
+  --sidebar: rgb(8, 12, 18);
+  --sidebar-foreground: rgb(240, 242, 247);
+  --sidebar-primary: rgb(240, 242, 247);
+  --sidebar-primary-foreground: rgb(8, 12, 18);
+  --sidebar-accent: rgb(22, 29, 46);
+  --sidebar-accent-foreground: rgb(240, 242, 247);
+  --sidebar-border: rgb(30, 42, 64);
+  --sidebar-ring: rgb(240, 242, 247);
+}
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-serif: 'Playfair Display', 'Playfair Display Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary-bg: var(--secondary-bg);
+  --color-secondary-text: var(--secondary-text);
+  --color-tertiary-bg: var(--tertiary-bg);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-image: 
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 1px,
+        rgba(0, 0, 0, 0.02) 1px,
+        rgba(0, 0, 0, 0.02) 2px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 1px,
+        rgba(0, 0, 0, 0.02) 1px,
+        rgba(0, 0, 0, 0.02) 2px
+      );
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Accessibility: WCAG AA Contrast Compliance */
+
+/* Available badge — green text must be dark enough */
+.badge-available {
+  color: #15803d !important; /* green-700, passes AA on white */
+}
+.dark .badge-available {
+  color: #4ade80 !important; /* green-400, passes AA on dark bg */
+}
+
+/* Skill chips in light mode — ensure readable text */
+:root:not(.dark) [class*="font-mono"][class*="border"][class*="px-3"] {
+  color: #374151; /* gray-700, minimum 4.5:1 on white */
+}
+
+/* Ensure focus rings are visible on all interactive elements */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
