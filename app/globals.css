@@ -4,110 +4,112 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* LIGHT MODE - Premium Blue Color System */
+  /* LIGHT MODE - Custom Brand Palette */
   /* Backgrounds */
-  --background: rgb(255, 255, 255);               /* #FFFFFF */
-  --secondary-bg: rgb(247, 248, 250);             /* #F7F8FA */
-  --tertiary-bg: rgb(238, 240, 244);              /* #EEF0F4 */
+  --background: #FFFFFF;
+  --secondary-bg: #F7F7F7;
+  --tertiary-bg: #EEEEEE;
   
   /* Text Colors */
-  --foreground: rgb(13, 17, 23);                  /* #0D1117 - primary text */
-  --secondary-text: rgb(60, 68, 85);              /* #3C4455 - body text */
-  --muted-foreground: rgb(107, 115, 133);         /* #6B7385 - labels */
+  --foreground: #1B1B3A;
+  --secondary-text: #2E4057;
+  --muted-foreground: #2E4057;
   
   /* Accents & Interactive */
-  --accent: rgb(37, 99, 235);                     /* #2563EB - premium blue CTA */
-  --accent-hover: rgb(29, 78, 216);               /* #1D4ED8 - blue hover */
-  --accent-foreground: rgb(255, 255, 255);        /* white text on blue */
+  --accent: #0D6EFD;
+  --accent-hover: #0b5ed7;
+  --accent-foreground: #FFFFFF;
   
   /* Semantic Colors */
-  --primary: rgb(13, 17, 23);
-  --primary-foreground: rgb(255, 255, 255);
-  --card: rgb(247, 248, 250);
-  --card-foreground: rgb(13, 17, 23);
-  --popover: rgb(255, 255, 255);
-  --popover-foreground: rgb(13, 17, 23);
-  --secondary: rgb(238, 240, 244);
-  --secondary-foreground: rgb(60, 68, 85);
-  --muted: rgb(238, 240, 244);
+  --primary: #0D6EFD;
+  --primary-foreground: #FFFFFF;
+  --card: #F7F7F7;
+  --card-foreground: #1B1B3A;
+  --popover: #FFFFFF;
+  --popover-foreground: #1B1B3A;
+  --secondary: #F7F7F7;
+  --secondary-foreground: #1B1B3A;
+  --muted: #F7F7F7;
   
   /* Borders & Input */
-  --border: rgb(226, 229, 237);                   /* #E2E5ED */
-  --input: rgb(247, 248, 250);
-  --ring: rgb(37, 99, 235);
+  --border: #E5E7EB; /* Subtle structural border */
+  --border-strong: #2E4057; /* For sharper elements if needed */
+  --input: #F7F7F7;
+  --ring: #0D6EFD;
   
   /* Charts & Legacy */
-  --destructive: rgb(220, 0, 49);
-  --destructive-foreground: rgb(255, 255, 255);
-  --chart-1: rgb(37, 99, 235);
-  --chart-2: rgb(220, 0, 49);
-  --chart-3: rgb(0, 122, 204);
-  --chart-4: rgb(13, 17, 23);
-  --chart-5: rgb(107, 115, 133);
+  --destructive: #ef4444;
+  --destructive-foreground: #FFFFFF;
+  --chart-1: #0D6EFD;
+  --chart-2: #2E4057;
+  --chart-3: #1B1B3A;
+  --chart-4: #8aaaff;
+  --chart-5: #b0c9ff;
   
   /* Sidebar Legacy */
-  --radius: 0;
-  --sidebar: rgb(255, 255, 255);
-  --sidebar-foreground: rgb(13, 17, 23);
-  --sidebar-primary: rgb(13, 17, 23);
-  --sidebar-primary-foreground: rgb(255, 255, 255);
-  --sidebar-accent: rgb(37, 99, 235);
-  --sidebar-accent-foreground: rgb(13, 17, 23);
-  --sidebar-border: rgb(226, 229, 237);
-  --sidebar-ring: rgb(37, 99, 235);
+  --radius: 0.5rem;
+  --sidebar: #F7F7F7;
+  --sidebar-foreground: #1B1B3A;
+  --sidebar-primary: #0D6EFD;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #E5E7EB;
+  --sidebar-accent-foreground: #1B1B3A;
+  --sidebar-border: #E5E7EB;
+  --sidebar-ring: #0D6EFD;
 }
 
 .dark {
-  /* DARK MODE - Premium Blue Color System */
+  /* DARK MODE - Custom Brand Palette */
   /* Backgrounds */
-  --background: rgb(8, 12, 18);                   /* #080C12 */
-  --secondary-bg: rgb(15, 21, 32);                /* #0F1520 */
-  --tertiary-bg: rgb(22, 29, 46);                 /* #161D2E */
+  --background: #000000;
+  --secondary-bg: #111111;
+  --tertiary-bg: #1A1D20;
   
   /* Text Colors */
-  --foreground: rgb(240, 242, 247);               /* #F0F2F7 - primary text */
-  --secondary-text: rgb(176, 184, 204);           /* #B0B8CC - body text */
-  --muted-foreground: rgb(107, 122, 153);         /* #6B7A99 - labels */
+  --foreground: #F8F9FA;
+  --secondary-text: #B0B8CC;
+  --muted-foreground: #9AA6B2;
   
   /* Accents & Interactive */
-  --accent: rgb(59, 130, 246);                    /* #3B82F6 - blue CTA */
-  --accent-hover: rgb(96, 165, 250);              /* #60A5FA - blue hover */
-  --accent-foreground: rgb(8, 12, 18);            /* dark text on blue */
+  --accent: #0D6EFD;
+  --accent-hover: #3B82F6;
+  --accent-foreground: #FFFFFF;
   
   /* Semantic Colors */
-  --primary: rgb(240, 242, 247);
-  --primary-foreground: rgb(8, 12, 18);
-  --card: rgb(15, 21, 32);
-  --card-foreground: rgb(240, 242, 247);
-  --popover: rgb(22, 29, 46);
-  --popover-foreground: rgb(240, 242, 247);
-  --secondary: rgb(22, 29, 46);
-  --secondary-foreground: rgb(176, 184, 204);
-  --muted: rgb(22, 29, 46);
+  --primary: #0D6EFD;
+  --primary-foreground: #FFFFFF;
+  --card: #111111;
+  --card-foreground: #F8F9FA;
+  --popover: #000000;
+  --popover-foreground: #F8F9FA;
+  --secondary: #111111;
+  --secondary-foreground: #F8F9FA;
+  --muted: #111111;
   
   /* Borders & Input */
-  --border: rgb(30, 42, 64);                      /* #1E2A40 */
-  --input: rgb(22, 29, 46);
-  --ring: rgb(59, 130, 246);
+  --border: #1A1D20;
+  --border-strong: #9AA6B2;
+  --input: #1A1D20;
+  --ring: #0D6EFD;
   
   /* Charts & Legacy */
-  --destructive: rgb(220, 0, 49);
-  --destructive-foreground: rgb(240, 242, 247);
-  --chart-1: rgb(59, 130, 246);
-  --chart-2: rgb(220, 0, 49);
-  --chart-3: rgb(0, 180, 255);
-  --chart-4: rgb(240, 242, 247);
-  --chart-5: rgb(176, 184, 204);
+  --destructive: #ef4444;
+  --destructive-foreground: #FFFFFF;
+  --chart-1: #0D6EFD;
+  --chart-2: #9AA6B2;
+  --chart-3: #F8F9FA;
+  --chart-4: #3B82F6;
+  --chart-5: #1d4ed8;
   
   /* Sidebar Legacy */
-  --sidebar: rgb(8, 12, 18);
-  --sidebar-foreground: rgb(240, 242, 247);
-  --sidebar-primary: rgb(240, 242, 247);
-  --sidebar-primary-foreground: rgb(8, 12, 18);
-  --sidebar-accent: rgb(22, 29, 46);
-  --sidebar-accent-foreground: rgb(240, 242, 247);
-  --sidebar-border: rgb(30, 42, 64);
-  --sidebar-ring: rgb(240, 242, 247);
+  --sidebar: #000000;
+  --sidebar-foreground: #F8F9FA;
+  --sidebar-primary: #0D6EFD;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #111111;
+  --sidebar-accent-foreground: #F8F9FA;
+  --sidebar-border: #1A1D20;
+  --sidebar-ring: #0D6EFD;
 }
 
 @theme inline {
@@ -212,4 +214,22 @@ a:focus-visible,
 button:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 2px;
+}
+
+@keyframes blob-morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+.animate-blob {
+  animation: blob-morph 12s ease-in-out infinite;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
 }

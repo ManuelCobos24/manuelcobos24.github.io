@@ -31,12 +31,19 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-border bg-background">
-        <div className="mx-auto max-w-7xl px-8 lg:px-12 py-12">
-          <p className="text-xs text-muted-foreground text-center font-semibold uppercase tracking-widest">
-            © 2025 Manuel Cobos Solís. All rights reserved.
-          </p>
-        </div>
+        <FooterContent />
       </footer>
+    </div>
+  )
+}
+
+function FooterContent() {
+  const { t } = require('@/app/LanguageContext').useLanguage()
+  return (
+    <div className="mx-auto max-w-7xl px-8 lg:px-12 py-12">
+      <p className="text-xs text-muted-foreground text-center font-semibold uppercase tracking-widest">
+        © {new Date().getFullYear()} Manuel Cobos Solís. {t('footer.rights')}
+      </p>
     </div>
   )
 }
