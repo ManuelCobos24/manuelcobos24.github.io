@@ -42,8 +42,11 @@ export default function Navigation() {
       <nav className="mx-auto max-w-7xl px-8 lg:px-12">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <a href="#" className="font-serif text-lg font-bold text-foreground hover:text-accent transition-colors" aria-label="Manuel Cobos">
-            MC
+          <a href="#" className="font-serif font-bold text-foreground hover:text-accent transition-colors flex items-center" aria-label="Manuel Cobos">
+            <span className="text-2xl">M</span>
+            <span className="text-base mt-1 mr-1.5">anuel</span>
+            <span className="text-2xl">C</span>
+            <span className="text-base mt-1">obos</span>
           </a>
 
           {/* Desktop Navigation */}

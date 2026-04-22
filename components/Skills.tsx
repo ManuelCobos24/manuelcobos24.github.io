@@ -89,8 +89,8 @@ export default function Skills() {
                   {category.label}
                 </h3>
                 {category.badge && (
-                  <span className="text-xs font-mono font-bold text-green-600 dark:text-green-400 
-                                   border border-green-500/40 bg-green-500/8 px-2 py-1 rounded">
+                  <span className="text-xs font-mono font-bold text-primary dark:text-primary 
+                                   border border-primary/40 bg-primary/10 px-2 py-1 rounded">
                     {category.badge}
                   </span>
                 )}
@@ -101,7 +101,7 @@ export default function Skills() {
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="text-sm text-foreground bg-background px-3 py-1 rounded border border-border"
+                    className={`text-sm text-foreground bg-background px-3 py-1 rounded border border-border transition-colors duration-300 ${require('@/lib/tech-utils').getTechHoverClass(skill)}`}
                   >
                     {skill}
                   </span>

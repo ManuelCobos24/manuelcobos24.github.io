@@ -85,11 +85,11 @@ export default function Projects() {
                 {/* Status text */}
                 <p className="font-mono text-xs font-bold tracking-widest 
                               text-foreground uppercase">
-                  En construcción
+                  {t('projects.under_construction')}
                 </p>
                 <p className="font-mono text-xs text-muted-foreground 
                               tracking-wider text-center px-6">
-                  Disponible próximamente
+                  {t('projects.coming_soon')}
                 </p>
               </div>
             </div>

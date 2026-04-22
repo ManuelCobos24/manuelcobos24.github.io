@@ -12,7 +12,7 @@
 
 ## 🚀 About Me
 
-I am a **Full Stack Developer** specialized in building high-availability banking systems. Currently at **VIEWNEXT**, working on-site for **Banco Santander**. I focus on backend excellence with Java and Spring Boot, complemented by robust frontend implementations in Angular.
+I am a **Full Stack Developer** specialized in building high-availability banking systems. Currently at **VIEWNEXT**, working on-site for the **Banking Sector**. I focus on backend excellence with Java and Spring Boot, complemented by robust frontend implementations in Angular.
 
 > "I build systems that have to work, no excuses."
 
@@ -39,7 +39,7 @@ I am a **Full Stack Developer** specialized in building high-availability bankin
 
 ## 💼 Experience Highlights
 
-- **VIEWNEXT (Banco Santander Client):** Developing and maintaining critical banking microservices and internal tools.
+- **VIEWNEXT (Banking Sector Client):** Developing and maintaining critical banking microservices and internal tools.
 - **Microservices Architecture:** Practical experience in high-availability production environments.
 - **Continuous Integration:** Automated pipelines and containerized deployments (Docker/OpenShift).
 - **Enterprise Integration:** Certified MuleSoft Developer (L1) with experience in legacy-to-modern system connectivity.
