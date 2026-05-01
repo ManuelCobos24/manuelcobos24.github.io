@@ -37,13 +37,6 @@ export const viewport = {
   ],
 }
 
-export const viewport = {
-  width: 'device-width',
-  initialScale: 1,
-  maximumScale: 5,
-  colorScheme: 'dark light',
-}
-
 export const metadata: Metadata = {
   title: {
     default: 'Manuel Cobos | Full Stack Developer | Java · Spring Boot · Kafka',
