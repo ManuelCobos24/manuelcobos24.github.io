@@ -7,13 +7,11 @@ export default function Hero() {
   const { t } = useLanguage()
 
   return (
-    <section className="relative bg-background pt-28 pb-28 border-b border-border">
+    <section className="relative bg-background pt-28 pb-28 border-b border-border" style={{ minHeight: '100vh' }}>
       <div className="mx-auto max-w-7xl px-8 lg:px-12">
         <div className="grid gap-16 lg:grid-cols-2 lg:items-start">
 
-          {/* Left column */}
           <div className="flex flex-col items-start relative pb-4">
-            {/* Available badge */}
             <div className="mb-8 inline-flex items-center gap-2 border border-primary/50 
                             bg-primary/5 dark:border-primary/40 dark:bg-primary/10 px-3 py-1.5 rounded-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
@@ -23,47 +21,50 @@ export default function Hero() {
               </span>
             </div>
 
-            {/* Name — the hero visual */}
             <h1 className="font-serif text-6xl lg:text-7xl xl:text-8xl leading-none 
-                           text-foreground mb-10 font-bold tracking-tight whitespace-pre-wrap">
+                           text-foreground mb-10 font-bold tracking-tight whitespace-pre-wrap"
+                style={{ fontDisplay: 'swap' }}>
               {t('hero.title')}
             </h1>
 
-            {/* Profile Image & Bio Block */}
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8 mb-10 w-full max-w-xl">
-               {/* Blob Image Avatar */}
                <div className="relative shrink-0 group">
-                  {/* Decorative glowing shadow blob */}
-                  <div className="absolute inset-0 bg-primary/20 animate-blob blur-xl opacity-50 group-hover:opacity-80 transition-opacity"></div>
-                  {/* Actual photo blob */}
-                  <div className="relative w-36 h-36 md:w-44 md:h-44 bg-secondary-bg/80 animate-blob border-2 border-primary/20 overflow-hidden shadow-xl drop-shadow-md">
+                  <div className="absolute inset-0 bg-primary/20 blur-xl opacity-50 group-hover:opacity-80 transition-opacity"
+                       style={{
+                         willChange: 'border-radius, opacity',
+                         contain: 'layout style',
+                         animation: 'blob-morph 12s ease-in-out infinite',
+                       }}></div>
+                  <div className="relative w-36 h-36 md:w-44 md:h-44 bg-secondary-bg/80 overflow-hidden shadow-xl drop-shadow-md"
+                       style={{
+                         animation: 'blob-morph 12s ease-in-out infinite',
+                         willChange: 'border-radius',
+                       }}>
                      <Image 
                         src="/profile-image.png" 
                         alt="Manuel Cobos Avatar" 
-                        width={200} 
-                        height={200} 
+                        width={176} 
+                        height={176} 
                         className="w-full h-full object-cover object-center" 
                         priority 
+                        sizes="176px"
                      />
                   </div>
                </div>
                
                <div className="flex-1 mt-2 sm:mt-0">
-                  {/* Role */}
                   <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground 
                                 mb-4 flex items-center justify-center sm:justify-start gap-3">
                     <span className="w-8 h-px bg-accent inline-block"></span>
                     {t('hero.role')}
                   </p>
 
-                  {/* Bio */}
                   <p className="text-base text-muted-foreground leading-relaxed text-center sm:text-left">
                     {t('hero.description')}
                   </p>
                </div>
             </div>
 
-            {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3 mb-10">
               <a href="#projects"
                  className="px-6 py-3 bg-accent text-white font-semibold uppercase 
@@ -78,7 +79,6 @@ export default function Hero() {
               </a>
             </div>
 
-            {/* Social links */}
             <div className="flex gap-6">
               <a href="https://github.com/ManuelCobos24" target="_blank" rel="noopener noreferrer"
                  className="text-xs uppercase tracking-wider text-muted-foreground 
@@ -98,7 +98,6 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right column — stat blocks */}
           <div className="space-y-0 border border-border divide-y divide-border">
             <div className="px-8 py-6">
               <p className="text-xs uppercase tracking-widest text-muted-foreground 

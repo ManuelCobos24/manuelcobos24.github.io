@@ -2,7 +2,7 @@
 
 const nextConfig = {
   output: 'export',
-
+  
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -13,6 +13,10 @@ const nextConfig = {
 
   basePath: '',
   assetPrefix: '',
+
+  compress: true,
+
+  poweredByHeader: false,
 }
 
 export default nextConfig

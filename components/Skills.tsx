@@ -1,6 +1,7 @@
 'use client'
 
 import { useLanguage } from '@/app/LanguageContext'
+import { getTechHoverClass } from '@/lib/tech-utils'
 
 export default function Skills() {
   const { t } = useLanguage()
@@ -101,7 +102,7 @@ export default function Skills() {
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className={`text-sm text-foreground bg-background px-3 py-1 rounded border border-border transition-colors duration-300 ${require('@/lib/tech-utils').getTechHoverClass(skill)}`}
+                    className={`text-sm text-foreground bg-background px-3 py-1 rounded border border-border transition-colors duration-300 ${getTechHoverClass(skill)}`}
                   >
                     {skill}
                   </span>
