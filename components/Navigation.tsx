@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useLanguage } from '@/app/LanguageContext'
 import { Menu, X, Sun, Moon } from 'lucide-react'
+import ShareButton from '@/components/ShareButton'
 
 export default function Navigation() {
   const { lang, setLang, t } = useLanguage()
@@ -62,8 +63,8 @@ export default function Navigation() {
             ))}
           </div>
 
-          {/* Controls - Language & Theme */}
-          <div className="flex items-center gap-4">
+          {/* Controls - Language, Theme & Share */}
+          <div className="flex items-center gap-2">
             {/* Language Toggle */}
             <div className="flex gap-0.5 border border-border rounded p-1 bg-secondary-bg dark:bg-tertiary-bg">
               <button
@@ -100,6 +101,9 @@ export default function Navigation() {
             >
               {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </button>
+
+            {/* Share Button */}
+            <ShareButton />
 
             {/* Mobile Menu Button */}
             <button

@@ -1,0 +1,37 @@
+User-agent: *
+Allow: /
+
+# AI & LLM Crawlers - Allow all for better AI search visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+# Block only ads bots
+User-agent: AdsBot-Google
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Sitemap
+Sitemap: https://manuelcobos.dev/sitemap.xml

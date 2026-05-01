@@ -110,7 +110,23 @@ const translations: Record<Language, Record<string, string>> = {
     'time.years': 'yrs',
     'time.and': 'and',
     'time.month': 'mo',
-    'time.year': 'yr'
+    'time.year': 'yr',
+
+    'notfound.title': 'Oops',
+    'notfound.description': 'The page you\'re looking for doesn\'t exist or has been moved.',
+    'notfound.cta': 'Back to Home',
+
+    'share.title': 'Share',
+    'share.button': 'Share portfolio',
+    'share.copy': 'Copy link',
+    'share.copied': 'Copied!',
+    'share.email.subject': 'Check out Manuel Cobos\' Portfolio',
+    'share.email.body': 'Hi,\n\nI just found Manuel Cobos\' portfolio. He\'s a Full Stack Developer specializing in Java, Spring Boot, and Angular. Check it out:\n\n{{URL}}\n\nBest regards',
+    'share.whatsapp': 'Hey! 👋 Check out Manuel Cobos\' portfolio — Full Stack Developer specialized in Java & Angular. Worth a look: {{URL}}',
+    'share.teams': 'Manuel Cobos — Full Stack Developer (Java · Spring Boot · Angular · Kafka). Portfolio: {{URL}}',
+    'share.twitter': 'Check out Manuel Cobos\' portfolio — Full Stack Developer specialized in Java, Spring Boot & Angular 🔧 {{URL}}',
+    'share.linkedin': 'Manuel Cobos is a Full Stack Developer specializing in Java, Spring Boot, Apache Kafka, and Angular. Check out his portfolio: {{URL}}',
+    'share.facebook': 'Manuel Cobos — Full Stack Developer portfolio. Java · Spring Boot · Angular · Kafka · OpenShift. {{URL}}',
   },
   ES: {
     'nav.home': 'Inicio',
@@ -211,7 +227,23 @@ const translations: Record<Language, Record<string, string>> = {
     'time.years': 'años',
     'time.and': 'y',
     'time.month': 'mes',
-    'time.year': 'año'
+    'time.year': 'año',
+
+    'notfound.title': 'Ups',
+    'notfound.description': 'La página que buscas no existe o ha sido movida.',
+    'notfound.cta': 'Volver al inicio',
+
+    'share.title': 'Compartir',
+    'share.button': 'Compartir portfolio',
+    'share.copy': 'Copiar enlace',
+    'share.copied': '¡Copiado!',
+    'share.email.subject': 'Mira el portfolio de Manuel Cobos',
+    'share.email.body': 'Hola,\n\nAcabo de descubrir el portfolio de Manuel Cobos. Es Full Stack Developer especializado en Java, Spring Boot y Angular. Échale un vistazo:\n\n{{URL}}\n\nSaludos',
+    'share.whatsapp': '¡Hola! 👋 Mira el portfolio de Manuel Cobos — Full Stack Developer especializado en Java y Angular. Merece la pena: {{URL}}',
+    'share.teams': 'Manuel Cobos — Full Stack Developer (Java · Spring Boot · Angular · Kafka). Portfolio: {{URL}}',
+    'share.twitter': 'Mira el portfolio de Manuel Cobos — Full Stack Developer especializado en Java, Spring Boot y Angular 🔧 {{URL}}',
+    'share.linkedin': 'Manuel Cobos es Full Stack Developer especializado en Java, Spring Boot, Apache Kafka y Angular. Mira su portfolio: {{URL}}',
+    'share.facebook': 'Portfolio de Manuel Cobos — Full Stack Developer. Java · Spring Boot · Angular · Kafka · OpenShift. {{URL}}',
   },
 }
 

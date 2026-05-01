@@ -35,7 +35,11 @@ export default function Projects() {
             {t('projects.title')}
           </h2>
           <p className="text-sm text-muted-foreground font-semibold uppercase tracking-wider">
-            {t('projects.subtitle')}
+            {t('projects.subtitle').split('github.com/ManuelCobos24')[0]}
+            <a href="https://github.com/ManuelCobos24" target="_blank" rel="noopener noreferrer"
+               className="text-accent hover:underline">
+              github.com/ManuelCobos24
+            </a>
           </p>
         </div>
 
@@ -98,10 +102,12 @@ export default function Projects() {
 
         {/* CTA */}
         <div className="mt-16 text-center">
-          <p className="font-mono text-xs text-muted-foreground 
-                        tracking-wider text-center">
-            {t('projects.github')}
-          </p>
+          <a href="https://github.com/ManuelCobos24" target="_blank" rel="noopener noreferrer"
+             className="font-mono text-xs text-accent tracking-wider text-center 
+                        hover:underline transition-colors inline-block">
+            {t('projects.github').split('github.com/ManuelCobos24')[0]}
+            <span className="underline">github.com/ManuelCobos24</span>
+          </a>
         </div>
       </div>
     </section>
